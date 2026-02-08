@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100vh;
+    font-size: 20px;
+}
+
+header, footer {
+    display: flex;
+    background-color: lightgray;
+    align-items: center;
+    height: 50px;
+}
+
+.header-links, .footer-links {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: beige;
+    padding: 10px;
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+    width: 10%;
+    gap: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: darkkhaki;
+    text-decoration: underline;
+}
+
+.cards {
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    border: 1px solid #eee;
+    padding: 5px;
+    width: 30%;
+    height: 30%;
+    border-radius: 4px;
+    background-color: lightblue;
+    outline: 2px solid;
+    overflow: auto;
+}
